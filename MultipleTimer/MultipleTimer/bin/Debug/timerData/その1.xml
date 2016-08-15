@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- タイマー -->
+<timers>
+ 	<timer id="0000">
+ 		<name>ダミー1</name>
+ 		<time>12:34:56</time>
+ 	</timer>
+ 	
+ 	<timer id="0001">
+ 		<name>ダミー2</name>
+ 		<time>01:23:45</time>
+ 	</timer>
+</timers>
