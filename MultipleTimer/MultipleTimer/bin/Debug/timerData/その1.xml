@@ -3,7 +3,7 @@
 <timers>
  	<timer id="0000">
  		<name>ダミー1</name>
- 		<time>12:34:56</time>
+ 		<time>00:00:05</time>
  	</timer>
  	
  	<timer id="0001">

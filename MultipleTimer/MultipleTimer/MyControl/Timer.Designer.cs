@@ -30,10 +30,10 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.textBoxItemName = new System.Windows.Forms.TextBox();
-			this.textBoxTimer = new System.Windows.Forms.TextBox();
 			this.buttonStart = new System.Windows.Forms.Button();
 			this.buttonRestart = new System.Windows.Forms.Button();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.labelTimer = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// textBoxItemName
@@ -44,16 +44,6 @@
 			this.textBoxItemName.Size = new System.Drawing.Size(134, 23);
 			this.textBoxItemName.TabIndex = 0;
 			// 
-			// textBoxTimer
-			// 
-			this.textBoxTimer.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.textBoxTimer.Location = new System.Drawing.Point(143, 3);
-			this.textBoxTimer.Name = "textBoxTimer";
-			this.textBoxTimer.ReadOnly = true;
-			this.textBoxTimer.Size = new System.Drawing.Size(62, 23);
-			this.textBoxTimer.TabIndex = 1;
-			this.textBoxTimer.Text = "00:00:00";
-			// 
 			// buttonStart
 			// 
 			this.buttonStart.Font = new System.Drawing.Font("MS UI Gothic", 12F);
@@ -63,6 +53,7 @@
 			this.buttonStart.TabIndex = 2;
 			this.buttonStart.Text = "▶";
 			this.buttonStart.UseVisualStyleBackColor = true;
+			this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
 			// 
 			// buttonRestart
 			// 
@@ -74,13 +65,28 @@
 			this.buttonRestart.Text = "↶";
 			this.buttonRestart.UseVisualStyleBackColor = true;
 			// 
+			// timer1
+			// 
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
+			// labelTimer
+			// 
+			this.labelTimer.AutoSize = true;
+			this.labelTimer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.labelTimer.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.labelTimer.Location = new System.Drawing.Point(141, 6);
+			this.labelTimer.Name = "labelTimer";
+			this.labelTimer.Size = new System.Drawing.Size(64, 18);
+			this.labelTimer.TabIndex = 4;
+			this.labelTimer.Text = "00:00:00";
+			// 
 			// Timer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.labelTimer);
 			this.Controls.Add(this.buttonRestart);
 			this.Controls.Add(this.buttonStart);
-			this.Controls.Add(this.textBoxTimer);
 			this.Controls.Add(this.textBoxItemName);
 			this.Name = "Timer";
 			this.Size = new System.Drawing.Size(271, 28);
@@ -92,9 +98,9 @@
 		#endregion
 
 		private System.Windows.Forms.TextBox textBoxItemName;
-		private System.Windows.Forms.TextBox textBoxTimer;
 		private System.Windows.Forms.Button buttonStart;
 		private System.Windows.Forms.Button buttonRestart;
 		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.Label labelTimer;
 	}
 }

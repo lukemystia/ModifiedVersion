@@ -33,6 +33,7 @@
 			this.時間パターン設定TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
 			this.終了XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.タイマーを追加TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -42,13 +43,14 @@
             this.設定ToolStripMenuItem});
 			this.menuStrip.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip.Name = "menuStrip";
-			this.menuStrip.Size = new System.Drawing.Size(385, 26);
+			this.menuStrip.Size = new System.Drawing.Size(293, 26);
 			this.menuStrip.TabIndex = 0;
 			this.menuStrip.Text = "menuStrip1";
 			// 
 			// 設定ToolStripMenuItem
 			// 
 			this.設定ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.タイマーを追加TToolStripMenuItem,
             this.時間パターン設定TToolStripMenuItem,
             this.toolStripMenuItem1,
             this.終了XToolStripMenuItem});
@@ -75,11 +77,18 @@
 			this.終了XToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
 			this.終了XToolStripMenuItem.Text = "終了(&X)";
 			// 
+			// タイマーを追加TToolStripMenuItem
+			// 
+			this.タイマーを追加TToolStripMenuItem.Name = "タイマーを追加TToolStripMenuItem";
+			this.タイマーを追加TToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+			this.タイマーを追加TToolStripMenuItem.Text = "タイマーを追加(&T)";
+			this.タイマーを追加TToolStripMenuItem.Click += new System.EventHandler(this.タイマーを追加TToolStripMenuItem_Click);
+			// 
 			// FormMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(385, 62);
+			this.ClientSize = new System.Drawing.Size(293, 252);
 			this.Controls.Add(this.menuStrip);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MainMenuStrip = this.menuStrip;
@@ -100,6 +109,7 @@
 		private System.Windows.Forms.ToolStripMenuItem 時間パターン設定TToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem 終了XToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem タイマーを追加TToolStripMenuItem;
 	}
 }
 

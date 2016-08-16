@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ExtendedTreeNode.cs" />
+    <Compile Include="Common\ReadTimerDataFile.cs" />
     <Compile Include="FormConfiguration.cs">
       <SubType>Form</SubType>
     </Compile>
