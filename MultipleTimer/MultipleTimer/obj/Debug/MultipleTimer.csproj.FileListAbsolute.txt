@@ -11,3 +11,16 @@ C:\Users\Luke\Desktop\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.FormMa
 C:\Users\Luke\Desktop\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.Timer.resources
 C:\Users\Luke\Desktop\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.SoundConfig.resources
 C:\Users\Luke\Desktop\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.TimerConfig.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\bin\Debug\MultipleTimer.exe.config
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.exe
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.pdb
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\bin\Debug\MultipleTimer.exe
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\bin\Debug\MultipleTimer.pdb
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.csprojResolveAssemblyReference.cache
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.FormConfiguration.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.FormMain.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.SoundConfig.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.Timer.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.TimerConfig.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.Properties.Resources.resources
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.csproj.GenerateResource.Cache

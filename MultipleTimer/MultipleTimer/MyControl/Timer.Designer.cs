@@ -29,59 +29,59 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.textBoxItemName = new System.Windows.Forms.TextBox();
+			this.textBoxTimer = new System.Windows.Forms.TextBox();
+			this.buttonStart = new System.Windows.Forms.Button();
+			this.buttonRestart = new System.Windows.Forms.Button();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// textBoxItemName
 			// 
-			this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.textBox1.Location = new System.Drawing.Point(3, 3);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(134, 23);
-			this.textBox1.TabIndex = 0;
+			this.textBoxItemName.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.textBoxItemName.Location = new System.Drawing.Point(3, 3);
+			this.textBoxItemName.Name = "textBoxItemName";
+			this.textBoxItemName.Size = new System.Drawing.Size(134, 23);
+			this.textBoxItemName.TabIndex = 0;
 			// 
-			// textBox2
+			// textBoxTimer
 			// 
-			this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.textBox2.Location = new System.Drawing.Point(143, 3);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.ReadOnly = true;
-			this.textBox2.Size = new System.Drawing.Size(62, 23);
-			this.textBox2.TabIndex = 1;
-			this.textBox2.Text = "00:00:00";
+			this.textBoxTimer.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.textBoxTimer.Location = new System.Drawing.Point(143, 3);
+			this.textBoxTimer.Name = "textBoxTimer";
+			this.textBoxTimer.ReadOnly = true;
+			this.textBoxTimer.Size = new System.Drawing.Size(62, 23);
+			this.textBoxTimer.TabIndex = 1;
+			this.textBoxTimer.Text = "00:00:00";
 			// 
-			// button1
+			// buttonStart
 			// 
-			this.button1.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.button1.Location = new System.Drawing.Point(211, 3);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(25, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "▶";
-			this.button1.UseVisualStyleBackColor = true;
+			this.buttonStart.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.buttonStart.Location = new System.Drawing.Point(211, 3);
+			this.buttonStart.Name = "buttonStart";
+			this.buttonStart.Size = new System.Drawing.Size(25, 23);
+			this.buttonStart.TabIndex = 2;
+			this.buttonStart.Text = "▶";
+			this.buttonStart.UseVisualStyleBackColor = true;
 			// 
-			// button2
+			// buttonRestart
 			// 
-			this.button2.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.button2.Location = new System.Drawing.Point(242, 3);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(25, 23);
-			this.button2.TabIndex = 3;
-			this.button2.Text = "↶";
-			this.button2.UseVisualStyleBackColor = true;
+			this.buttonRestart.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.buttonRestart.Location = new System.Drawing.Point(242, 3);
+			this.buttonRestart.Name = "buttonRestart";
+			this.buttonRestart.Size = new System.Drawing.Size(25, 23);
+			this.buttonRestart.TabIndex = 3;
+			this.buttonRestart.Text = "↶";
+			this.buttonRestart.UseVisualStyleBackColor = true;
 			// 
 			// Timer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.buttonRestart);
+			this.Controls.Add(this.buttonStart);
+			this.Controls.Add(this.textBoxTimer);
+			this.Controls.Add(this.textBoxItemName);
 			this.Name = "Timer";
 			this.Size = new System.Drawing.Size(271, 28);
 			this.ResumeLayout(false);
@@ -91,10 +91,10 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.TextBox textBoxItemName;
+		private System.Windows.Forms.TextBox textBoxTimer;
+		private System.Windows.Forms.Button buttonStart;
+		private System.Windows.Forms.Button buttonRestart;
 		private System.Windows.Forms.Timer timer1;
 	}
 }
