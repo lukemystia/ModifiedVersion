@@ -53,7 +53,7 @@ namespace MultipleTimer.Models
 		{
 			timerDataList = new TimerDataList();
 
-			using (FileStream fs = new FileStream(filepath, FileMode.Open))
+			using (var fs = new FileStream(filepath, FileMode.Open))
 			{
 				var serializer = new XmlSerializer(typeof(TimerDataList));
 				timerDataList = (TimerDataList)serializer.Deserialize(fs);

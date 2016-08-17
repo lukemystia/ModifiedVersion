@@ -21,7 +21,7 @@ namespace MultipleTimer.Models
 		/// <summary>
 		/// setter
 		/// </summary>
-		/// <param name="filepath"></param>
+		/// <param name="filepath">ファイルパス</param>
 		public void setTimerDataFileView(string filepath)
 		{
 			this.filepath = filepath;

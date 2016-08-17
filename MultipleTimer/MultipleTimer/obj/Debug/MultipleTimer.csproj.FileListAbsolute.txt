@@ -24,3 +24,5 @@ C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\D
 C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.MyControl.TimerConfig.resources
 C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.Properties.Resources.resources
 C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\obj\Debug\MultipleTimer.csproj.GenerateResource.Cache
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\bin\Debug\LukeLibrary.dll
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\MultipleTimer\bin\Debug\LukeLibrary.pdb

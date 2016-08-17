@@ -1,0 +1,5 @@
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\LukeLibrary\bin\Debug\LukeLibrary.dll
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\LukeLibrary\bin\Debug\LukeLibrary.pdb
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\LukeLibrary\obj\Debug\LukeLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\LukeLibrary\obj\Debug\LukeLibrary.dll
+C:\Users\Luke\Documents\GitHub\ModifiedVersion\MultipleTimer\LukeLibrary\obj\Debug\LukeLibrary.pdb
