@@ -60,6 +60,7 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Flag.cs" />
     <Compile Include="Models\TimerData.cs" />
     <Compile Include="Models\TimerDataFileView.cs" />
     <Compile Include="MyControl\SoundConfig.cs">

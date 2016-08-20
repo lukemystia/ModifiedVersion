@@ -19,6 +19,9 @@ namespace MultipleTimer.MyControl
 		/// </summary>
 		private List<TimerData> timerData = new List<TimerData>();
 
+		/// <summary>
+		/// ボタンの状態
+		/// </summary>
 		private enum buttonStartStatus
 		{
 			start,
@@ -35,14 +38,21 @@ namespace MultipleTimer.MyControl
 		/// </summary>
 		private int endUT = 0;
 
+		/// <summary>
+		/// セットした時間
+		/// </summary>
+		private string setTimerTime = "";
+
 		public Timer(List<TimerData> td)
 		{
 			InitializeComponent();
 
 			timerData = td;
 
-			// TODO : 仮決め打ち
-			labelTimer.Text = timerData[0].time;
+			foreach (var item in timerData)
+			{
+				comboBoxTimer.Items.Add(item.time);
+			}
 		}
 
 		/// <summary>
@@ -52,25 +62,36 @@ namespace MultipleTimer.MyControl
 		/// <param name="e"></param>
 		private void buttonStart_Click(object sender, EventArgs e)
 		{
-			if (buttonStartStatus_ == buttonStartStatus.start)
+			switch (buttonStartStatus_)
 			{
-				buttonStartStatus_ = buttonStartStatus.stop;
+				case buttonStartStatus.start:
+					{
+						buttonStartStatus_ = buttonStartStatus.stop;
 
-				timer1.Enabled = false;
-				buttonStart.Text = "■";
+						comboBoxTimer.Enabled = false;
 
-				var nowUT = DateTime.Now.getUnixTime();
-				var setUT = labelTimer.Text.ToUnixTime();
+						timer1.Enabled = false;
+						buttonStart.Text = "■";
 
-				endUT = nowUT + setUT;
+						var nowUT = DateTime.Now.getUnixTime();
+						var setUT = comboBoxTimer.Text.ToUnixTime();
 
-				timer1.Enabled = true;
-			}
-			else
-			{
-				buttonStartStatus_ = buttonStartStatus.start;
-				timer1.Enabled = false;
-				buttonStart.Text = "▶";
+						endUT = nowUT + setUT;
+
+						timer1.Enabled = true;
+
+						break;
+					}
+				case buttonStartStatus.stop:
+					{
+						comboBoxTimer.Enabled = true;
+
+						buttonStartStatus_ = buttonStartStatus.start;
+						timer1.Enabled = false;
+						buttonStart.Text = "▶";
+
+						break;
+					}
 			}
 		}
 
@@ -89,14 +110,38 @@ namespace MultipleTimer.MyControl
 			if (resultTime < 1)
 			{
 				timer1.Enabled = false;
-				labelTimer.Text = "  終了  ";
+				comboBoxTimer.Text = "  終了  ";
 
 				buttonStart.Enabled = false;
+
+				comboBoxTimer.Enabled = true;
 			}
 			else
 			{
-				labelTimer.Text = resultTime.ToTextTime();
+				comboBoxTimer.Text = resultTime.ToTextTime();
 			}
+		}
+		
+		/// <summary>
+		/// リスタートボタン
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void buttonRestart_Click(object sender, EventArgs e)
+		{
+			comboBoxTimer.Text = setTimerTime;
+
+			buttonStart.Enabled = true;
+			buttonStartStatus_ = buttonStartStatus.start;
+			buttonStart_Click(sender, e);
+		}
+
+		private void comboBoxTimer_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			timer1.Enabled = false;
+			buttonStart.Enabled = true;
+			buttonStart.Text = "▶";
+			buttonStartStatus_ = buttonStartStatus.start;
 		}
 	}
 }

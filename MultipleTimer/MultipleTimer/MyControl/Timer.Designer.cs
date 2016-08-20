@@ -33,7 +33,7 @@
 			this.buttonStart = new System.Windows.Forms.Button();
 			this.buttonRestart = new System.Windows.Forms.Button();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.labelTimer = new System.Windows.Forms.Label();
+			this.comboBoxTimer = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// textBoxItemName
@@ -41,7 +41,7 @@
 			this.textBoxItemName.Font = new System.Drawing.Font("MS UI Gothic", 12F);
 			this.textBoxItemName.Location = new System.Drawing.Point(3, 3);
 			this.textBoxItemName.Name = "textBoxItemName";
-			this.textBoxItemName.Size = new System.Drawing.Size(134, 23);
+			this.textBoxItemName.Size = new System.Drawing.Size(118, 23);
 			this.textBoxItemName.TabIndex = 0;
 			// 
 			// buttonStart
@@ -57,6 +57,7 @@
 			// 
 			// buttonRestart
 			// 
+			this.buttonRestart.Enabled = false;
 			this.buttonRestart.Font = new System.Drawing.Font("MS UI Gothic", 12F);
 			this.buttonRestart.Location = new System.Drawing.Point(242, 3);
 			this.buttonRestart.Name = "buttonRestart";
@@ -64,27 +65,28 @@
 			this.buttonRestart.TabIndex = 3;
 			this.buttonRestart.Text = "↶";
 			this.buttonRestart.UseVisualStyleBackColor = true;
+			this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
 			// 
 			// timer1
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// labelTimer
+			// comboBoxTimer
 			// 
-			this.labelTimer.AutoSize = true;
-			this.labelTimer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelTimer.Font = new System.Drawing.Font("MS UI Gothic", 12F);
-			this.labelTimer.Location = new System.Drawing.Point(141, 6);
-			this.labelTimer.Name = "labelTimer";
-			this.labelTimer.Size = new System.Drawing.Size(64, 18);
-			this.labelTimer.TabIndex = 4;
-			this.labelTimer.Text = "00:00:00";
+			this.comboBoxTimer.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+			this.comboBoxTimer.FormattingEnabled = true;
+			this.comboBoxTimer.Location = new System.Drawing.Point(127, 3);
+			this.comboBoxTimer.Name = "comboBoxTimer";
+			this.comboBoxTimer.Size = new System.Drawing.Size(78, 24);
+			this.comboBoxTimer.TabIndex = 4;
+			this.comboBoxTimer.Text = "00:00:00";
+			this.comboBoxTimer.SelectedIndexChanged += new System.EventHandler(this.comboBoxTimer_SelectedIndexChanged);
 			// 
 			// Timer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.labelTimer);
+			this.Controls.Add(this.comboBoxTimer);
 			this.Controls.Add(this.buttonRestart);
 			this.Controls.Add(this.buttonStart);
 			this.Controls.Add(this.textBoxItemName);
@@ -101,6 +103,6 @@
 		private System.Windows.Forms.Button buttonStart;
 		private System.Windows.Forms.Button buttonRestart;
 		private System.Windows.Forms.Timer timer1;
-		private System.Windows.Forms.Label labelTimer;
+		private System.Windows.Forms.ComboBox comboBoxTimer;
 	}
 }
